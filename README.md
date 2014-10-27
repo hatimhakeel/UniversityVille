@@ -8,5 +8,14 @@ This is a demo and test project used to apply new technologies learnt in develop
 Initial Technologies
 
 1. ASP.NET MVC 
-2. Entity Framework
+2. Entity Framework (Code first migrations were used.)
 3. SQL Server Local Db
+
+Road Map for future
+===================
+
+1. Apply an IoC container for DI
+2. Include a unit test project with mock objects (Technology needs to be researched.)
+3. Enhance the domain model by adding more entities and interactions, covering a larger number of real world scenarios
+4. Add authentication with role priviledges
+5. Research on related software design patterns to increase code and architectural quality
