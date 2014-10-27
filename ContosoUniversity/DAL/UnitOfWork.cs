@@ -11,6 +11,7 @@ namespace ContosoUniversity.DAL
         private SchoolContext context = new SchoolContext();
         private GenericRepository<Department> departmentRepository;
         private GenericRepository<Course> courseRepository;
+        //Test comment.
 
         public GenericRepository<Department> DepartmentRepository
         {
