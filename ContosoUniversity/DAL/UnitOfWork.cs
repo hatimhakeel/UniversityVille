@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using ContosoUniversity.Models;
+using ContosoUniversity.DAL;
 
 namespace ContosoUniversity.DAL
 {
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private SchoolContext context = new SchoolContext();
         private GenericRepository<Department> departmentRepository;

@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 
 namespace ContosoUniversity.DAL
 {
-    public class GenericRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
         internal SchoolContext context;
         internal DbSet<TEntity> dbSet;
