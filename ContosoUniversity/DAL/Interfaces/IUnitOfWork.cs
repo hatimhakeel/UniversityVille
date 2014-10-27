@@ -11,5 +11,8 @@ namespace ContosoUniversity.DAL
     {
         GenericRepository<Department> DepartmentRepository { get; }
         GenericRepository<Course> CourseRepository { get; }
+        GenericRepository<Person> PersonRepository { get; }
+        GenericRepository<Student> StudentRepository { get; }
+        GenericRepository<Instructor> InstructorRepository { get; }
     }
 }

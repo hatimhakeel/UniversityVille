@@ -12,7 +12,9 @@ namespace ContosoUniversity.DAL
         private SchoolContext context = new SchoolContext();
         private GenericRepository<Department> departmentRepository;
         private GenericRepository<Course> courseRepository;
-        //Test comment.
+        private GenericRepository<Person> personRepository;
+        private GenericRepository<Student> studentRepository;
+        private GenericRepository<Instructor> instructorRepository;
 
         public GenericRepository<Department> DepartmentRepository
         {
@@ -35,6 +37,42 @@ namespace ContosoUniversity.DAL
                     this.courseRepository = new GenericRepository<Course>(context);
                 }
                 return courseRepository;
+            }
+        }
+
+        public GenericRepository<Person> PersonRepository
+        {
+            get
+            {
+                if (this.personRepository == null)
+                {
+                    this.personRepository = new GenericRepository<Person>(context);
+                }
+                return personRepository;
+            }
+        }
+
+        public GenericRepository<Student> StudentRepository
+        {
+            get
+            {
+                if (this.studentRepository == null)
+                {
+                    this.studentRepository = new GenericRepository<Student>(context);
+                }
+                return studentRepository;
+            }
+        }
+
+        public GenericRepository<Instructor> InstructorRepository
+        {
+            get
+            {
+                if (this.instructorRepository == null)
+                {
+                    this.instructorRepository = new GenericRepository<Instructor>(context);
+                }
+                return instructorRepository;
             }
         }
 
