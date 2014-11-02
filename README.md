@@ -19,3 +19,5 @@ Road Map for future
 3. Enhance the domain model by adding more entities and interactions, covering a larger number of real world scenarios
 4. Add authentication with role priviledges
 5. Research on related software design patterns to increase code and architectural quality
+
+* The current version is in repoUoW branch and not yet merged to master.
